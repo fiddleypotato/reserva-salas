@@ -50,5 +50,3 @@ As histórias de utilizador (User Stories) abaixo estão priorizadas para focar 
 | **6 (Média)** | Notificações | **Como** cliente, **quero** receber um email automático sempre que um administrador cancelar a minha reserva, **para que** seja informado atempadamente e possa reagendar. | 
 | **7 (Média)** | Funcionalidades de IA | **Como** cliente, **quero** que o sistema de IA me recomende espaços frequentemente usados por mim no meu horário habitual, **para que** o processo de reserva seja mais rápido. | 
 | **8 (Baixa)** | Funcionalidades de IA | **Como** administrador, **quero** aceder a um *dashboard* preditivo gerado por IA, **para que** consiga antecipar os dias de maior sobrelotação do espaço. |
-
-testeDC

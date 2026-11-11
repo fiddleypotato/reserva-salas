@@ -1,0 +1,8 @@
+# Registo de Riscos
+
+| ID | Risco | Probabilidade | Impacto | Mitigação | 
+| ----- | ----- | ----- | ----- | ----- | 
+| **R01** | **Conflito de reservas (Overbooking):** Múltiplos utilizadores tentam reservar o mesmo espaço em simultâneo. | Média | Alto | Implementar bloqueios transacionais (*pessimistic locking*) na base de dados e testes de stress durante o desenvolvimento. | 
+| **R02** | **Insatisfação por cancelamento administrativo:** Clientes perdem a reserva de forma abrupta por ação do administrador. | Média | Médio | Criar políticas claras nos Termos e Condições e desenvolver um sistema de notificações automáticas que inclua a justificação do cancelamento e sugestão de espaços alternativos. | 
+| **R03** | **Alucinação do assistente de IA (Risco IA):** O chatbot de suporte alimentado por IA fornece informações erradas sobre regras de subscrição ou confirma reservas que não foram registadas. | Baixa | Alto | Implementar *guardrails* rígidos no modelo de IA para que este atue apenas em modo de leitura (consulta de disponibilidade) e direcione a intenção de reserva para o fluxo standard (sem intervenção de IA para a transação). | 
+| **R04** | **Viés na recomendação de espaços (Risco IA):** O algoritmo de IA que sugere salas aos utilizadores ignora as restrições do seu tier de subscrição, sugerindo espaços premium a utilizadores do tier base. | Média | Médio | Impor restrições baseadas em regras de negócio (*hard constraints*) pós-processamento, filtrando as sugestões da IA cruzando-as com a tabela de permissões de tiers antes de as apresentar ao cliente. | 
